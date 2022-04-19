@@ -1,0 +1,364 @@
+
+//!##############################star
+    glPushMatrix();
+    glTranslatef(-10, 35, 0);
+    star();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(3, 38, 0);
+    star();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-10, 35, 0);
+    star();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(15, 30, 0);
+    star();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-30, 35, 0);
+    star();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(10, 28, 0);
+    star();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(20, 25, 0);
+    star();
+    glPopMatrix();
+    //!##############################starEnds
+
+//!###########################tide
+
+    tideNight();
+
+    glPushMatrix();
+    glTranslatef(7, 5, 0);
+    tideNight();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-7, 8, 0);
+    tideNight();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-37, 10, 0);
+    tideNight();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-27, 18, 0);
+    tideNight();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(27, 14, 0);
+    tideNight();
+    glPopMatrix();
+
+
+
+//!###########################end tide
+//!###########################umbrella, seat, tree, crabs
+
+glPushMatrix();
+glTranslatef(0, 20, 0);
+Umbrella();
+Seat();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-20, 15, 0);
+Umbrella();
+Seat();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(20, 15, 0);
+Umbrella();
+Seat();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(10, -55, 0);
+glScalef(100, 100, 0);
+tree();
+glPopMatrix();
+
+//!###########################umbrella, seat, tree, crabs-----ends
+glPushMatrix();
+glTranslatef(-10, 28, 0);
+glScalef(15, 10, 0);
+flagship();
+glPopMatrix();
+
+
+cargoShip_night();  boat();
+lightHouse_Night();hill(); watchTower_Night();
+
+
+glPopMatrix();
+glutSwapBuffers();
+
+
+}
+
+
+
+void displayNight(int val)
+{
+    glutDisplayFunc(night);//inside the bracket this a function, which will be display
+	//so make a function of this
+}
+
+
+
+void display()
+{
+
+glClear(GL_COLOR_BUFFER_BIT);
+glMatrixMode(GL_MODELVIEW);
+
+road();
+
+glColor3ub(243, 213, 120);
+sand();
+
+glColor3ub(0,157,196);
+ocean();
+
+
+//!###########################tide
+
+    tide();
+
+    glPushMatrix();
+    glTranslatef(7, 5, 0);
+    tide();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-7, 8, 0);
+    tide();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-37, 10, 0);
+    tide();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-27, 18, 0);
+    tide();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(27, 14, 0);
+    tide();
+    glPopMatrix();
+
+
+
+//!###########################end tide
+
+glColor3ub(135,206,235);
+sky();
+
+sun();
+
+
+cloud();
+cloud2();
+cloud3();
+
+
+bannerPlane();
+
+lightHouse();
+//!#########################raj
+ hill();
+
+glPushMatrix();
+glTranslatef(-20, 29, 0);
+glScalef(15, 10, 0);
+flagship();
+glPopMatrix();
+
+cargoShip_01();
+cargoShip_02();
+
+watchTower();
+
+
+//!###########################umbrella, seat, tree, crabs
+
+glPushMatrix();
+glTranslatef(0, 20, 0);
+Umbrella();
+Seat();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-20, 15, 0);
+Umbrella();
+Seat();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(20, 15, 0);
+Umbrella();
+Seat();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(25, -20, 0);
+glScalef(46, 46, 0);
+
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(10, -55, 0);
+glScalef(100, 100, 0);
+tree();
+glPopMatrix();
+
+//!###########################umbrella, seat, tree, crabs-----ends
+
+
+truck00();
+truck01();
+//glutTimerFunc(3600, displayHotel, 0);
+glutSwapBuffers();
+glFlush();
+
+}
+
+void display(int val) //call it from the keyBoard or mouse handle
+{
+    glutDisplayFunc(display);//inside the bracket this a function, which will be display
+	//so make a function of this
+}
+
+
+
+void SpecialInput(int key, int x, int y)
+{
+switch(key)
+{
+case GLUT_KEY_UP:
+            glutTimerFunc( 1, displayNight, 0);
+            break;
+case GLUT_KEY_DOWN:
+            glutTimerFunc( 1, display, 0);
+            break;
+case GLUT_KEY_LEFT:
+            glutTimerFunc( 1, displayHotel, 0);
+            break;
+case GLUT_KEY_RIGHT:
+            glutTimerFunc( 1, displayHotel_Night, 0);
+            break;
+}
+glutPostRedisplay();
+}
+
+
+void control(unsigned char key, int x, int y) {
+switch (key) {
+
+//!###########################################################Ship
+case 'q':           Shipspeed00=0;   break;
+case 'w':           Shipspeed01=0;   break;
+
+case 'e':           Shipspeed00=0.4;   break;
+case 'r':           Shipspeed01=0.4;   break;
+
+case 't':           Shipspeed00+=0.4;   break;
+case 'y':           Shipspeed01+=0.4;   break;
+
+case 'u':           Shipspeed00-=0.4;   break;
+case 'i':           Shipspeed01-=0.4;   break;
+//!###########################################################truck
+case '1':           Truckspeed00=0;   break;
+case '2':           Truckspeed01=0;   break;
+
+case '3':           Truckspeed00=0.4;   break;
+case '4':           Truckspeed01=0.4;   break;
+
+case '5':           Truckspeed00+=0.4;   break;
+case '6':           Truckspeed01+=0.4;   break;
+
+case '7':           Truckspeed00-=0.4;   break;
+case '8':           Truckspeed01-=0.4;   break;
+//!###########################################################plane
+case 'Q':           Planespeed+=0.4;   break;
+case 'W':           Planespeed-=0.4;   break;
+
+//!###########################################################light
+case 'Z':           lightSpeed=0;   break;
+case 'X':           lightSpeed=0.4;   break;
+
+case 'C':           lightSpeed+=0.4;   break;
+case 'V':           lightSpeed-=0.4;   break;
+
+}     glutPostRedisplay();
+
+}
+
+
+void init()
+{
+    glLoadIdentity();
+    gluOrtho2D(-50,50,-50,50);
+}
+
+int main(int argc, char** argv)
+{
+
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+
+    	glutInitWindowSize(850, 650);
+    	glutCreateWindow("Sea Beach View From Hotel");
+
+    	init(); //ortho2d
+
+	glutDisplayFunc(display);
+
+
+
+	glutTimerFunc(20, move_cargoShip_01, 0);
+	glutTimerFunc(20, move_cargoShip_02, 0);
+	glutTimerFunc(20, moveBannerPlane, 0);
+    glutTimerFunc(20, rotateWT_light, 0);
+    glutTimerFunc(20, update_truck00, 0);
+    glutTimerFunc(20, update_truck01, 0);
+    glutTimerFunc(20, rotateLH_light, 0);
+
+    glutTimerFunc(100, update2, 0);
+    glutTimerFunc(100, update, 0);
+
+
+
+    glutKeyboardFunc(control);
+
+    glutSpecialFunc(SpecialInput);
+
+
+
+
+	glutMainLoop();
+	return 0;
+}
+
+
+
+

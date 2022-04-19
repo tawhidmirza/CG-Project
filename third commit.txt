@@ -1,0 +1,898 @@
+void netTower() //!akm_tower
+{
+
+            //!towerBar
+            glPushMatrix();
+            glScaled(.6, .6, 0);
+            glTranslatef(58,-20,0);
+
+
+            //!###########################towerStruct
+            glPushMatrix();
+            glScaled(4, 4, 0);
+                    glBegin(GL_POLYGON);
+            glColor3ub(0,0,0);
+            glVertex2f(0, -4);
+            glVertex2f(2, -4);
+            glVertex2f(2, 6);
+            glVertex2f(0, 6);
+            glEnd();
+
+            glBegin(GL_LINES);
+            glColor3ub(0,0,0);
+            glVertex2f(.5, .6);
+            glVertex2f(1.5, 6);
+            glVertex2f(1.5, 6);
+            glVertex2f(1.5, 10);
+            glVertex2f(1.5, 10);
+            glVertex2f(.5, 10);
+            glVertex2f(.5, 10);
+            glVertex2f(.5, .6);
+            glEnd();
+
+            glBegin(GL_LINES);
+            glColor3ub(0,0,0);
+            glVertex2f(2, 6);
+            glVertex2f(4, 9);
+            glEnd();
+
+            glBegin(GL_LINES);
+            glColor3ub(0,0,0);
+            glVertex2f(2, 6);
+            glVertex2f(4, 7);
+            glEnd();
+
+            glBegin(GL_LINES);
+            glColor3ub(0,0,0);
+            glVertex2f(0, 6);
+            glVertex2f(-2, 9);
+            glEnd();
+
+            glBegin(GL_LINES);
+            glColor3ub(0,0,0);
+            glVertex2f(0, 6);
+            glVertex2f(-2, 7);
+            glEnd();
+
+            //!############################towerStruct End
+            glPopMatrix();
+
+            //!netBar1/2
+            glPushMatrix();
+            glTranslatef(-7,12,0);
+            glScaled(2, 4, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(1, 0);
+            glVertex2f(1, 3);
+            glVertex2f(0, 3);
+            glEnd();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(13,12,0);
+            glScaled(2, 4, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(1, 0);
+            glVertex2f(1, 3);
+            glVertex2f(0, 3);
+            glEnd();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(1.5,31,0);
+            glScaled(2, 4, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(1, 0);
+            glVertex2f(1, 3);
+            glVertex2f(0, 3);
+            glEnd();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(4.5,31,0);
+            glScaled(2, 4, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(1, 0);
+            glVertex2f(1, 3);
+            glVertex2f(0, 3);
+            glEnd();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(-8,19,0);
+            glScaled(4, 2, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(6, 0);
+            glVertex2f(6, .5);
+            glVertex2f(0, .5);
+            glEnd();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(-8,28,0);
+            glScaled(4, 2, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(6, 0);
+            glVertex2f(6, .5);
+            glVertex2f(0, .5);
+            glEnd();
+            glPopMatrix();
+            glPushMatrix();
+            glTranslatef(-8,30,0);
+            glScaled(4, 2, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(6, 0);
+            glVertex2f(6, .5);
+            glVertex2f(0, .5);
+            glEnd();
+            glPopMatrix();
+
+
+            //!net bar 1/2-2
+            glPushMatrix();
+            glTranslatef(-4,11,0);
+            glScaled(2, 4, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(1, 0);
+            glVertex2f(1, 3);
+            glVertex2f(0, 3);
+            glEnd();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(10,11,0);
+            glScaled(2, 4, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(1, 0);
+            glVertex2f(1, 3);
+            glVertex2f(0, 3);
+            glEnd();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(-8,16,0);
+            glScaled(4, 2, 0);
+            glBegin(GL_POLYGON);
+            glColor3ub(128, 0, 32);
+            glVertex2f(0, 0);
+            glVertex2f(6, 0);
+            glVertex2f(6, .5);
+            glVertex2f(0, .5);
+            glEnd();
+            glPopMatrix();
+
+            //!########################net3
+            glPushMatrix();
+            glScaled(3, 4, 0);
+            glTranslatef(-0.2,3.5,0);
+            glBegin(GL_POLYGON);
+            glColor3ub(250,250,250);
+            glVertex2f(0, 0);
+            glVertex2f(1, 0);
+            glVertex2f(1, 2);
+            glVertex2f(0, 2);
+            glEnd();
+            glPopMatrix();
+
+            glPushMatrix();
+            glScaled(3, 4, 0);
+            glTranslatef(2,3.5,0);
+            glVertex2f(0, 0);
+            glVertex2f(1, 0);
+            glVertex2f(1, 2);
+            glVertex2f(0, 2);
+            glPopMatrix();
+
+            //!circle
+            glPushMatrix();
+
+            glScaled(.5, .5, 0);
+            glTranslatef(-14, 42,0);
+            glColor3ub(255, 255, 255);
+            circle();
+            glPopMatrix();
+
+            glPushMatrix();
+            glScaled(.5, .5, 0);
+            glTranslatef(30, 42,0);
+            glColor3ub(255, 255, 255);
+            circle();
+            glPopMatrix();
+
+            //!circle2
+             glPushMatrix();
+
+            glScaled(.5, .5, 0);
+            glTranslatef(-16, 42,0);
+            glColor3ub(250, 250, 0);
+            circle();
+            glPopMatrix();
+
+            glPushMatrix();
+            glScaled(.5, .5, 0);
+            glTranslatef(32, 42,0);
+            glColor3ub(250, 250, 0);
+            circle();
+            glPopMatrix();
+
+
+            glPopMatrix();
+
+
+
+
+
+}
+
+void boatMOdel(){
+
+
+   glColor3ub( 23, 23, 22);
+   glBegin(GL_POLYGON);
+   glVertex2f(-10 ,10);
+   glVertex2f(11,10);
+   glVertex2f(16 ,5);
+   glVertex2f(-10 ,5);
+   glEnd();
+
+   glColor3ub( 255, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2f(-8 ,10);
+   glVertex2f(10 ,10);
+   glVertex2f(7 ,16);
+   glVertex2f(-8,16);
+   glEnd();
+
+   glColor3ub(13, 0, 255);
+   glBegin(GL_POLYGON);
+   glVertex2f(-1.5 ,14.5);
+   glVertex2f(0.5 ,14.5);
+   glVertex2f(0.5 ,12.5);
+   glVertex2f(-1.5 ,12.5);
+   glEnd();
+
+   glColor3ub( 13, 0, 255);
+   glBegin(GL_POLYGON);
+   glVertex2f(-5.5 ,14.5);
+   glVertex2f(-3.5 ,14.5);
+   glVertex2f(-3.5 ,12.5);
+   glVertex2f(-5.5 ,12.5);
+   glEnd();
+
+   glColor3ub( 13, 0, 255);
+   glBegin(GL_POLYGON);
+   glVertex2f(2.5 ,14.5);
+   glVertex2f(4.5 ,14.5);
+   glVertex2f(4.5 ,12.5);
+   glVertex2f(2.5 ,12.5);
+   glEnd();
+
+   glColor3ub( 0, 255, 72);
+   glBegin(GL_POLYGON);
+   glVertex2f(-2.5 ,16);
+   glVertex2f(6.5 ,16);
+   glVertex2f(5 ,20);
+   glVertex2f(-2.5 ,20);
+   glEnd();
+
+   glColor3f( 255, 255, 0);
+   glBegin(GL_POLYGON);
+   glVertex2f(-1 ,19.5);
+   glVertex2f(1,19.5);
+   glVertex2f(1 ,17.5);
+   glVertex2f(-1 ,17.5);
+   glEnd();
+
+   glColor3f( 255, 255, 0);
+   glBegin(GL_POLYGON);
+   glVertex2f(2 ,19.5);
+   glVertex2f(4 ,19.5);
+   glVertex2f(4 ,17.5);
+   glVertex2f(2 ,17.5);
+   glEnd();
+
+
+}
+
+void boat()
+{
+
+   glPushMatrix();
+   glTranslatef(_move, 0, 1);
+   boatMOdel();
+   glPopMatrix();
+
+}
+
+void hill()
+{
+    glColor3ub(10, 95, 53);
+    glBegin(GL_POLYGON);
+    glVertex2f(-40, 20);
+    glVertex2f(-50, 33);
+    glVertex2f(-65, 20);
+    glEnd();
+
+    glColor3ub(7, 109, 45);
+    glBegin(GL_POLYGON);
+    glVertex2f(-35, 20);
+    glVertex2f(-40, 33);
+    glVertex2f(-60, 20);
+    glEnd();
+}
+
+
+
+
+
+
+void cargoShip() //!akm_ship
+{
+
+    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!cargo ship structure
+    glBegin(GL_POLYGON);
+    glColor3ub (9, 9, 29);
+    glVertex2f(-5,2);
+    glVertex2f(25,2);
+    glVertex2f(29,6);
+    glVertex2f(-5,6);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub (255, 69, 0);
+    glVertex2f(-4,0);
+    glVertex2f(23,0);
+    glVertex2f(25,2);
+    glVertex2f(-5,2);
+    glEnd();
+
+
+    glBegin(GL_POLYGON);
+    glColor3ub (133, 133, 133);
+    glVertex2f(2,4);
+    glVertex2f(25,4);
+    glVertex2f(27,6);
+    glVertex2f(2,6);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub (0, 30, 0);
+    glVertex2f(-5,6);
+    glVertex2f(2,6);
+    glVertex2f(2,11);
+    glVertex2f(-5,11);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub (20,0,39);
+    glVertex2f(-4,11);
+    glVertex2f(2,11);
+    glVertex2f(2,13);
+    glVertex2f(-4,13);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub (20,0,39);
+    glVertex2f(0,13);
+    glVertex2f(2,13);
+    glVertex2f(2,18);
+    glVertex2f(0,18);
+    glEnd();
+
+    glPushMatrix();
+    glTranslatef(-2.5, 0 ,0);
+    glBegin(GL_POLYGON);
+    glColor3ub (20,0,39);
+    glVertex2f(0,13);
+    glVertex2f(2,13);
+    glVertex2f(2,18);
+    glVertex2f(0,18);
+    glEnd();
+    glPopMatrix();
+
+    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!windowwwws
+    glBegin(GL_POLYGON);
+    glColor3ub (250, 250, 250);
+    glVertex2f(-4,6);
+    glVertex2f(-3,6);
+    glVertex2f(-3,7);
+    glVertex2f(-4,7);
+    glEnd();
+
+    glPushMatrix();
+    glTranslatef(1.5, 0 ,0);
+    glBegin(GL_POLYGON);
+    glColor3ub (250, 250, 250);
+    glVertex2f(-4,6);
+    glVertex2f(-3,6);
+    glVertex2f(-3,7);
+    glVertex2f(-4,7);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(3, 0 ,0);
+    glBegin(GL_POLYGON);
+    glColor3ub (250, 250, 250);
+    glVertex2f(-4,6);
+    glVertex2f(-3,6);
+    glVertex2f(-3,7);
+    glVertex2f(-4,7);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(1.5, 0 ,0);
+    glBegin(GL_POLYGON);
+    glColor3ub (250, 250, 250);
+    glVertex2f(-4,6);
+    glVertex2f(-3,6);
+    glVertex2f(-3,7);
+    glVertex2f(-4,7);
+    glEnd();
+    glPopMatrix();
+
+    //!!!!!!!!!!!!!!!!!! windows 2nd row
+    glPushMatrix();
+    glTranslatef(0, 2 ,0);
+    glBegin(GL_POLYGON);
+    glColor3ub (250, 250, 250);
+    glVertex2f(-4,6);
+    glVertex2f(-3,6);
+    glVertex2f(-3,7);
+    glVertex2f(-4,7);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(1.5, 2 ,0);
+    glBegin(GL_POLYGON);
+    glColor3ub (250, 250, 250);
+    glVertex2f(-4,6);
+    glVertex2f(-3,6);
+    glVertex2f(-3,7);
+    glVertex2f(-4,7);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(3, 2 ,0);
+    glBegin(GL_POLYGON);
+    glColor3ub (250, 250, 250);
+    glVertex2f(-4,6);
+    glVertex2f(-3,6);
+    glVertex2f(-3,7);
+    glVertex2f(-4,7);
+    glEnd();
+    glPopMatrix();
+
+    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!end of cargo ship structure
+
+    /*! container structure. you can use this part as an obj for another method
+
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+*/
+
+    //!container column-01
+    glPushMatrix();
+    glColor3ub(0, 0, 52);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(3, 2, 0);
+    glColor3ub(77, 0, 0);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(0, 2, 0);
+    glColor3ub(77, 50, 0);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(0, 4, 0);
+    glColor3ub(205,102,0);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+    //!column-02
+    glPushMatrix();
+    glTranslatef(5.5, 0, 0);
+    glColor3ub(255,171,87);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+
+    glPushMatrix();
+    glTranslatef(8, 2, 0);
+    glColor3ub(255,87,87);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(5.5, 4, 0);
+    glColor3ub(255,0,87);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+    //!column-03
+    glPushMatrix();
+    glTranslatef(11, 0, 0);
+    glColor3ub(128, 0, 255);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(16, 0, 0);
+    glColor3ub(109, 218, 111);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+
+    glPushMatrix();
+    glTranslatef(13, 2, 0);
+    glColor3ub(10,0,20);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(14, 4, 0);
+    glColor3ub(91, 0, 0);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(18, 2, 0);
+    glColor3ub(255,255,26);
+    glBegin(GL_POLYGON);
+    glVertex2f(3,4);
+    glVertex2f(8,4);
+    glVertex2f(8,6);
+    glVertex2f(3,6);
+    glEnd();
+    glPopMatrix();
+
+
+    //!!!!!!crane
+    glPushMatrix();
+    glTranslatef(26.5, 6, 0);
+    glScalef(1.5, 2, 0);
+
+    //!!!!##################################### crane Body structure
+    glBegin(GL_POLYGON);
+    glColor3ub (51, 51, 51);
+    glVertex2f(-1,0);
+    glVertex2f(1,0);
+    glVertex2f(1,.5);
+    glVertex2f(-1,.5);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub (51, 51, 51);
+    glVertex2f(-.5,.5);
+    glVertex2f(.5,.5);
+    glVertex2f(.5,4);
+    glVertex2f(-.5,4);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub (51, 51, 51);
+    glVertex2f(-.2, 4);
+    glVertex2f(.2, 4);
+    glVertex2f(.2, 8);
+    glVertex2f(-.2, 8);
+    glEnd();
+
+    glBegin(GL_LINES);
+    glColor3ub (63, 0, 0);
+    glVertex2f(0, 6);
+    glVertex2f(-4, 8);
+    glEnd();
+
+    glBegin(GL_LINES);
+    glColor3ub (63, 0, 0);
+    glVertex2f(0, 2);
+    glVertex2f(-4, 8);
+    glEnd();
+
+//!!!!!!!!!!end of crane body structure
+
+
+    glPopMatrix();
+
+
+
+}
+
+
+void cargoShip_01() //!akm_ship01
+{
+    glPushMatrix();
+    glTranslatef(_move, 0, 0);
+    glTranslatef(0, 10, 0);
+    cargoShip();
+    glPopMatrix();
+}
+
+void cargoShip_02()//!akm_ship02
+{
+    glPushMatrix();
+    glTranslatef(_move2, 0, 0);
+
+    glPushMatrix();
+    glTranslatef(-10, -5, 0);
+    cargoShip();
+    glPopMatrix();
+
+    glPopMatrix();
+}
+
+void cargoShip_night()//!akm_ship02
+{
+    glPushMatrix();
+    glScalef(1, .8, 0);
+    glTranslatef(15, 20, 0);
+    cargoShip();
+
+    glPopMatrix();
+}
+
+
+void move_cargoShip_01 (int value) //!akm_ship01_anm
+{
+
+    _move += Shipspeed00;
+
+    if(_move > 55)
+    {
+        _move = -55;
+    }
+
+	glutPostRedisplay();
+
+	glutTimerFunc(20, move_cargoShip_01, 0);
+}
+
+void move_cargoShip_02 (int value) //!akm_ship02_anm
+{
+
+    _move2 += Shipspeed01;
+
+    if(_move2 > 55)
+    {
+        _move2 = -55;
+    }
+
+	glutPostRedisplay();
+
+	glutTimerFunc(20, move_cargoShip_02, 0);
+}
+
+
+void flagship()
+{
+glPushMatrix();
+glTranslatef(position, 0, 0);
+glBegin(GL_QUADS);
+glColor3ub(173, 71, 7);
+glVertex2f(0.3f, -0.9f);
+glVertex2f(0.8f, -0.9f);
+glVertex2f(1.0f, -0.6f);
+glVertex2f(0.1f, -0.6f);
+glEnd();
+glBegin(GL_QUADS);//1st row
+glColor3ub(37,19,15);
+glVertex2f(0.21f, -0.6f);
+glVertex2f(0.9f, -0.6f);
+glVertex2f(0.9f, -0.5f);
+glVertex2f(0.21f, -0.5f);
+glEnd();
+glBegin(GL_QUADS);
+glColor3ub(45,45,45);//2nd row
+glVertex2f(0.25f, -0.5f);
+glVertex2f(0.83f, -0.5f);
+glVertex2f(0.83f, -0.4f);
+glVertex2f(0.25f, -0.4f);
+glEnd();
+glBegin(GL_QUADS);
+glColor3ub(0.0,0.0,0.0);//1st piller
+glVertex2f(0.31f, -0.22f);
+glVertex2f(0.39f, -0.22f);
+glVertex2f(0.39f, -0.40f);
+glVertex2f(0.31f, -0.40f);
+glEnd();
+glBegin(GL_QUADS); //2nd piller
+glColor3ub(0.0,0.0,0.0);
+glVertex2f(0.45f, -0.22f);
+glVertex2f(0.52f, -0.22f);
+glVertex2f(0.52f, -0.40f);
+glVertex2f(0.45f, -0.40f);
+glEnd();
+glBegin(GL_QUADS);//3rd piller
+glColor3ub(0.0,0.0,0.0);
+glVertex2f(0.56f, -0.22f);
+glVertex2f(0.62f, -0.22f);
+glVertex2f(0.62f, -0.40f);
+glVertex2f(0.56f, -0.40f);
+glEnd();
+glBegin(GL_QUADS);//4th piller
+glColor3ub(0.0,0.0,0.0);
+glVertex2f(0.66f, -0.22f);
+glVertex2f(0.73f, -0.22f);
+glVertex2f(0.73f, -0.40f);
+glVertex2f(0.66f, -0.40f);
+glEnd();
+glBegin(GL_QUADS);
+glColor3ub(247,247,247);//1st piller_white part
+glVertex2f(0.31f, -0.22f);
+glVertex2f(0.39f, -0.22f);
+glVertex2f(0.39f, -0.17f);
+glVertex2f(0.31f, -0.17f);
+glEnd();
+glBegin(GL_QUADS); //2nd piller_white part
+glColor3ub(247,247,247);
+glVertex2f(0.45f, -0.22f);
+glVertex2f(0.52f, -0.22f);
+glVertex2f(0.52f, -0.17f);
+glVertex2f(0.45f, -0.17f);
+glEnd();
+glBegin(GL_QUADS);//3rd piller_white part
+glColor3ub(247,247,247);
+glVertex2f(0.56f, -0.22f);
+glVertex2f(0.62f, -0.22f);
+glVertex2f(0.62f, -0.17f);
+glVertex2f(0.56f, -0.17f);
+glEnd();
+glBegin(GL_QUADS);//4th piller_white part
+glColor3ub(247,247,247);
+glVertex2f(0.66f, -0.22f);
+glVertex2f(0.73f, -0.22f);
+glVertex2f(0.73f, -0.17f);
+glVertex2f(0.66f, -0.17f);
+glEnd();
+glBegin(GL_QUADS);//piller brown
+glColor3ub(654,52,52);
+glVertex2f(0.17f, -0.6f);
+glVertex2f(0.20f, -0.6f);
+glVertex2f(0.20f, -0.0f);
+glVertex2f(0.17f, -0.0f);
+glEnd();
+glBegin(GL_QUADS);//pileer-violet
+glColor3ub(145,145,145);
+glVertex2f(0.19f, -0.0f);
+glVertex2f(0.21f,-0.0f);
+glVertex2f(0.21f, -0.6f);
+glVertex2f(0.19f, -0.6f);
+glEnd();
+glBegin(GL_TRIANGLES);//Flag
+glColor3ub(247,5,3);
+glVertex2f(-0.01f, -0.4);
+glVertex2f(0.17f, -0.4f);
+glVertex2f(0.17f, -0.01f);
+glEnd();
+glBegin(GL_QUADS);//1st ship window
+glColor3ub(247,247,247);
+glVertex2f(0.22f, -0.58f);
+glVertex2f(0.28f, -0.58f);
+glVertex2f(0.28f, -0.53f);
+glVertex2f(0.22f, -0.53f);
+glEnd();
+glBegin(GL_QUADS);//2nd row WINDOW
+glColor3ub(247,247,247);
+glVertex2f(0.40f, -0.58f);
+glVertex2f(0.34f, -0.58f);
+glVertex2f(0.34f, -0.53f);
+glVertex2f(0.40f, -0.53f);
+glEnd();
+glBegin(GL_QUADS);//3rd shipWINDOW
+glColor3ub(247,247,247);
+glVertex2f(0.51f, -0.58f);
+glVertex2f(0.45f, -0.58f);
+glVertex2f(0.45f, -0.53f);
+glVertex2f(0.51f, -0.53f);
+glEnd();
+glBegin(GL_QUADS);//4th ship window
+glColor3ub(247,247,247);
+glVertex2f(0.55f, -0.58f);
+glVertex2f(0.61f, -0.58f);
+glVertex2f(0.61f, -0.53f);
+glVertex2f(0.55f, -0.53f);
+glEnd();
+glBegin(GL_QUADS);//5th window
+glColor3ub(247,247,247);
+glVertex2f(0.65f, -0.58f);
+glVertex2f(0.71f, -0.58f);
+glVertex2f(0.71f, -0.53f);
+glVertex2f(0.65f, -0.53f);
+glEnd();
+glBegin(GL_QUADS);//6th window
+glColor3ub(247,247,247);
+glVertex2f(0.85f, -0.58f);
+glVertex2f(0.77f, -0.58f);
+glVertex2f(0.77f, -0.53f);
+glVertex2f(0.85f, -0.53f);
+glEnd();
+glPopMatrix();
+
+
+}
